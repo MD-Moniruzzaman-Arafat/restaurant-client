@@ -3,12 +3,12 @@ import { NavLink } from "react-router-dom";
 const Navbar = () => {
 
     const navMenu = <>
-        <NavLink to={"/"}><li className="font-medium "><a>HOME</a></li></NavLink>
-        <NavLink to={"/contact-us"}><li className="font-medium "><a>CONTACT US</a></li></NavLink>
-        <NavLink to={"/dashboard"}><li className="font-medium "><a>DASHBOARD</a></li></NavLink>
-        <NavLink to={"/our-menu"}><li className="font-medium "><a>OUR MENU</a></li></NavLink>
-        <NavLink to={"/our-shop"}><li className="font-medium "><a>OUR SHOP</a></li></NavLink>
-        <NavLink to={"/sign-out"}><li className="font-medium "><a>SIGN OUT</a></li></NavLink>
+        <li className="font-medium "><NavLink to={"/"}>HOME</NavLink></li>
+        <li className="font-medium "><NavLink to={"/contact-us"}>CONTACT US</NavLink></li>
+        <li className="font-medium "><NavLink to={"/dashboard"}>DASHBOARD</NavLink></li>
+        <li className="font-medium "><NavLink to={"/our-menu"}>OUR MENU</NavLink></li>
+        <li className="font-medium "><NavLink to={"/our-shop"}>OUR SHOP</NavLink></li>
+        <li className="font-medium "><NavLink to={"/sign-out"}>SIGN OUT</NavLink></li>
     </>
 
 
