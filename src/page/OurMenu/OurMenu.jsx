@@ -4,7 +4,10 @@ import { Helmet } from "react-helmet-async";
 import MenuItemhook from "../../hooks/menuItem/MenuItemhook";
 import SectionTitle from "../../components/SectionTitle/SectionTitle";
 import MenuItem from "../../components/OurMenu/MenuItem";
-import img2 from "../../assets/home/chef-service.jpg"
+import desserts from "../../assets/menu/dessert-bg.jpeg"
+import pizzas from "../../assets/menu/pizza-bg.jpg"
+import salads from "../../assets/menu/salad-bg.jpg"
+import soups from "../../assets/menu/soup-bg.jpg"
 
 const OurMenu = () => {
 
@@ -42,7 +45,7 @@ const OurMenu = () => {
             </div>
 
             {/* dessert food banner */}
-            <Banner img={img2} title={"DESSERTS"} description={"Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."}></Banner>
+            <Banner img={desserts} title={"DESSERTS"} description={"Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."}></Banner>
 
             {/* dessert food */}
             <div className=" max-w-5xl mx-auto my-12">
@@ -57,7 +60,7 @@ const OurMenu = () => {
             </div>
 
             {/* pizza food*/}
-            <Banner img={img2} title={"PIZZA"} description={"Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."}></Banner>
+            <Banner img={pizzas} title={"PIZZA"} description={"Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."}></Banner>
 
             {/* pizza food */}
             <div className=" max-w-5xl mx-auto my-12">
@@ -73,7 +76,7 @@ const OurMenu = () => {
 
 
             {/* salad food*/}
-            <Banner img={img2} title={"SALAD"} description={"Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."}></Banner>
+            <Banner img={salads} title={"SALAD"} description={"Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."}></Banner>
 
             {/* salad food */}
             <div className=" max-w-5xl mx-auto my-12">
@@ -89,7 +92,7 @@ const OurMenu = () => {
 
 
             {/* soup food*/}
-            <Banner img={img2} title={"SOUP"} description={"Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."}></Banner>
+            <Banner img={soups} title={"SOUP"} description={"Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."}></Banner>
 
             {/* soup food */}
             <div className=" max-w-5xl mx-auto my-12">
