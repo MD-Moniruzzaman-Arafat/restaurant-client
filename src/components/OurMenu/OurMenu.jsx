@@ -1,19 +1,22 @@
-import { useEffect, useState } from "react";
+import MenuItemhook from "../../hooks/menuItem/MenuItemhook";
 import SectionTitle from "../SectionTitle/SectionTitle";
 import MenuItem from "./MenuItem";
 
 
 const OurMenu = () => {
-    const [menus, setMenus] = useState([]);
+    const [menus] = MenuItemhook();
+    const popularItem = menus.filter(data => data.category == 'popular')
 
-    useEffect(() => {
-        fetch("menu.json")
-            .then(res => res.json())
-            .then(data => {
-                const popularItem = data.filter(data => data.category == 'popular')
-                setMenus(popularItem)
-            })
-    }, [])
+    // const [menus, setMenus] = useState([]);
+
+    // useEffect(() => {
+    //     fetch("menu.json")
+    //         .then(res => res.json())
+    //         .then(data => {
+    //             const popularItem = data.filter(data => data.category == 'popular')
+    //             setMenus(popularItem)
+    //         })
+    // }, [])
 
 
 
@@ -22,7 +25,7 @@ const OurMenu = () => {
             <SectionTitle smallTitle={"---Check it out---"} bigTitle={"FROM OUR MENU"}></SectionTitle>
             <div className="grid md:grid-cols-2 grid-cols-1 gap-5">
                 {
-                    menus.map(menu => <MenuItem key={menu._id} menu={menu}></MenuItem>)
+                    popularItem.map(menu => <MenuItem key={menu._id} menu={menu}></MenuItem>)
                 }
             </div>
             <div className="w-48 mx-auto my-10">
