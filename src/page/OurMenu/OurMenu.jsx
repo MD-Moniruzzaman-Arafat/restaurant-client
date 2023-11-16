@@ -57,13 +57,29 @@ const OurMenu = () => {
             </div>
 
             {/* pizza food*/}
-            <Banner img={img2} title={"pizza"} description={"Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."}></Banner>
+            <Banner img={img2} title={"PIZZA"} description={"Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."}></Banner>
 
             {/* pizza food */}
             <div className=" max-w-5xl mx-auto my-12">
                 <div className="grid md:grid-cols-2 grid-cols-1 gap-5 max-w-5xl mx-auto" >
                     {
                         pizza.map(menu => <MenuItem key={menu._id} menu={menu}></MenuItem>)
+                    }
+                </div>
+                <div className="w-64 mx-auto my-10">
+                    <button className="btn border-b-4 border-b-cyan-950 text-center bg-white hover:border-b-cyan-950 hover:bg-white">ORDER YOUR FAVOURITE FOOD</button>
+                </div>
+            </div>
+
+
+            {/* salad food*/}
+            <Banner img={img2} title={"SALAD"} description={"Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."}></Banner>
+
+            {/* salad food */}
+            <div className=" max-w-5xl mx-auto my-12">
+                <div className="grid md:grid-cols-2 grid-cols-1 gap-5 max-w-5xl mx-auto" >
+                    {
+                        salad.map(menu => <MenuItem key={menu._id} menu={menu}></MenuItem>)
                     }
                 </div>
                 <div className="w-64 mx-auto my-10">
