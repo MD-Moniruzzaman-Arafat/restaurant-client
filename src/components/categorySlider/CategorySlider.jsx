@@ -25,31 +25,31 @@ export default function CategorySlider() {
       >
         <SwiperSlide>
           <img src={slide1} alt="" />
-          <p className="absolute bottom-10 font-extrabold text-gray-900 bg-slate-500 px-[175px]">
+          <p className="-mt-10 text-2xl font-extrabold text-gray-800 bg-white">
             Salads
           </p>
         </SwiperSlide>
         <SwiperSlide>
           <img src={slide2} alt="" />
-          <p className="absolute bottom-10 font-extrabold text-gray-900 bg-slate-500 px-[177px]">
+          <p className="-mt-10 text-2xl font-extrabold text-gray-800 bg-white">
             pizzas
           </p>
         </SwiperSlide>
         <SwiperSlide>
           <img src={slide3} alt="" />
-          <p className="absolute bottom-10 font-extrabold text-gray-900 bg-slate-500 px-[178px]">
+          <p className="-mt-10 text-2xl font-extrabold text-gray-800 bg-white">
             Soups
           </p>
         </SwiperSlide>
         <SwiperSlide>
           <img src={slide4} alt="" />
-          <p className="absolute bottom-10 font-extrabold text-gray-900 bg-slate-500 px-[167px]">
+          <p className="-mt-10 text-2xl font-extrabold text-gray-800 bg-white">
             desserts
           </p>
         </SwiperSlide>
         <SwiperSlide>
           <img src={slide5} alt="" />
-          <p className="absolute bottom-10 font-extrabold text-gray-900 bg-slate-500 px-[175px]">
+          <p className="-mt-10 text-2xl font-extrabold text-gray-800 bg-white">
             Salads
           </p>
         </SwiperSlide>
