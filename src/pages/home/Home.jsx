@@ -1,3 +1,4 @@
+import BistroBoss from "../../components/bistroBoss/BistroBoss";
 import CategorySlider from "../../components/categorySlider/CategorySlider";
 import Slider from "../../components/slider/Slider";
 import SectionTitle from "../shareComponent/SectionTitle";
@@ -12,6 +13,7 @@ export default function Home() {
           title2={"ORDER ONLINE"}
         />
         <CategorySlider />
+        <BistroBoss />
       </div>
     </div>
   );
