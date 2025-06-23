@@ -24,7 +24,7 @@ import MainTitle from '../../reUseableComponents/SmallTitle/MainTitle';
 export default function OrderOnline() {
     return (
         <>
-            <div className='py-20'>
+            <div className='my-20'>
                 <SmallTitle title='From 11:00am to 10:00pm' />
                 <MainTitle title='ORDER ONLINE' />
                 <Swiper
