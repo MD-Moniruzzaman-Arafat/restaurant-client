@@ -11,6 +11,7 @@ export default function FeatureItem() {
                 style={{
                     backgroundImage:
                         `url(${bgImage})`,
+                    backgroundAttachment: 'fixed',
                 }}
             >
                 <div className="hero-overlay"></div>
