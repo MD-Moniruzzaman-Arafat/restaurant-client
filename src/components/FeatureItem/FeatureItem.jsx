@@ -25,7 +25,9 @@ export default function FeatureItem() {
                             <div>
                                 <p>March 20, 2023</p>
                                 <p>WHERE CAN I GET SOME?</p>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error voluptate facere, deserunt dolores maiores quod nobis quas quasi. Eaque repellat recusandae ad laudantium tempore consequatur consequuntur omnis ullam maxime tenetur.</p>
+                                <p className='mb-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error voluptate facere, deserunt dolores maiores quod nobis quas quasi. Eaque repellat recusandae ad laudantium tempore consequatur consequuntur omnis ullam maxime tenetur.</p>
+
+                                <button className='border-b-3 mt-1 border-b-amber-700 cursor-pointer'>Read More</button>
                             </div>
                         </div>
                     </div>
