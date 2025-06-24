@@ -5,7 +5,7 @@ export default function SectionBanner() {
     return (
         <>
             <div
-                className="hero max-w-5xl mx-auto py-20 px-20 my-20"
+                className="hero max-w-6xl mx-auto py-20 px-20 my-20"
                 style={{
                     backgroundImage:
                         `url(${image})`,

@@ -54,7 +54,7 @@ export default function OrderOnline() {
                         },
                     }}
                     modules={[Pagination]}
-                    className="mySwiper md:max-w-5xl md:mx-auto my-10"
+                    className="mySwiper md:max-w-6xl md:mx-auto my-10"
                 >
 
                     <SwiperSlide className='relative'>
