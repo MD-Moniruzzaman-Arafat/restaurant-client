@@ -4,6 +4,7 @@ import OrderOnline from '../../components/OrderCategory/OrderOnline'
 import SectionBanner from '../../components/SectionBanner/SectionBanner'
 import FormOurMenu from '../../components/FormOurMenu/FormOurMenu'
 import ChefRecommends from '../../components/ChefRecommends/ChefRecommends'
+import FeatureItem from '../../components/FeatureItem/FeatureItem'
 
 export default function Home() {
     return (
@@ -13,6 +14,7 @@ export default function Home() {
             <SectionBanner />
             <FormOurMenu />
             <ChefRecommends />
+            <FeatureItem />
         </div>
     )
 }
