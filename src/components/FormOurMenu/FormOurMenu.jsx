@@ -1,7 +1,7 @@
 import React from 'react'
-import SmallTitle from '../../reUseableComponents/SmallTitle/SmallTitle'
-import MainTitle from '../../reUseableComponents/SmallTitle/MainTitle'
-import Item from '../../reUseableComponents/SmallTitle/Item'
+import SmallTitle from '../../reUseableComponents/SmallTitle'
+import MainTitle from '../../reUseableComponents/MainTitle'
+import Item from '../../reUseableComponents/Item'
 
 export default function FormOurMenu() {
     return (

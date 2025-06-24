@@ -1,5 +1,5 @@
 import React from 'react'
-import image from '../../assets/menu/soup-bg.jpg'
+import image from '../assets/menu/soup-bg.jpg'
 
 export default function Item() {
     return (
