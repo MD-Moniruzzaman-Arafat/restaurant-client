@@ -5,6 +5,7 @@ import SectionBanner from '../../components/SectionBanner/SectionBanner'
 import FormOurMenu from '../../components/FormOurMenu/FormOurMenu'
 import ChefRecommends from '../../components/ChefRecommends/ChefRecommends'
 import FeatureItem from '../../components/FeatureItem/FeatureItem'
+import Testimonial from '../../components/Testimonial/Testimonial'
 
 export default function Home() {
     return (
@@ -15,6 +16,7 @@ export default function Home() {
             <FormOurMenu />
             <ChefRecommends />
             <FeatureItem />
+            <Testimonial />
         </div>
     )
 }
