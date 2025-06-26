@@ -8,7 +8,7 @@ export default function Navbar() {
             <li><a>Contact Us</a></li>
             <li><a>Dashboard</a></li>
             <li><Link to={'our-menu'}>Our Menu</Link></li>
-            <li><a>Our Shop</a></li>
+            <li><Link to={'our-shop'}>Our Shop</Link></li>
             <li><a>Sign Out</a></li>
         </>
     );
@@ -28,7 +28,7 @@ export default function Navbar() {
                             {navMenu}
                         </ul>
                     </div>
-                    <a className="btn btn-ghost text-xl">BISTRO BOSS</a>
+                    <Link to={'/'} className="btn btn-ghost text-xl">Restaurant</Link>
                 </div>
                 <div className="navbar-end hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">

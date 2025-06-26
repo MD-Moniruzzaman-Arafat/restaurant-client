@@ -4,7 +4,7 @@ import image from '../assets/menu/salad-bg.jpg'
 export default function Card() {
     return (
         <>
-            <div className="card bg-base-100 md:w-96 shadow-sm">
+            <div className="card bg-base-100 md:w-80 shadow-sm">
                 <figure className="">
                     <img
                         src={image}
