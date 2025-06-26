@@ -1,6 +1,7 @@
 import React from 'react'
 import ItemBanner from '../../reUseableComponents/ItemBanner'
 import Item from '../../reUseableComponents/Item'
+import { Link } from 'react-router-dom'
 
 export default function Soups() {
     return (
@@ -16,7 +17,9 @@ export default function Soups() {
                     <Item />
                 </div>
                 <div className='max-w-6xl text-center mx-auto'>
-                    <button className='border border-b-gray-400  px-5 py-3 font-bold cursor-pointer'>ORDER YOUR FAVOURITE FOOD</button>
+                    <Link to={`/category/${'soups'}`} >
+                        <button className='border border-b-gray-400  px-5 py-3 font-bold cursor-pointer'>ORDER YOUR FAVOURITE FOOD</button>
+                    </Link>
                 </div>
             </div>
         </>

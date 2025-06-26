@@ -1,14 +1,28 @@
-import React from 'react'
+import React, { useState } from 'react'
 import 'react-tabs/style/react-tabs.css';
 import Card from '../../reUseableComponents/Card';
+import { Tab, TabList, TabPanel, Tabs } from 'react-tabs';
+import { useParams } from 'react-router-dom';
 
 export default function ShopCategory() {
+    const tabs = ['salad', 'pizza', 'soups', 'desserts', 'drinks'];
+    const { categoryName } = useParams();
+    const categoryIndex = tabs.indexOf(categoryName);
+    const [tabIndex, setTabIndex] = useState(categoryIndex || 1);
     return (
         <>
             <div className='max-w-6xl mx-auto px-4 py-10'>
-                <div className="tabs tabs-lift justify-center">
-                    <input type="radio" name="my_tabs_3" className="tab" aria-label="Salad" defaultChecked />
-                    <div className="tab-content bg-base-100 border-base-300 p-6 ">
+
+                <Tabs defaultIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
+                    <TabList className="flex justify-center mb-6">
+                        <Tab>salad</Tab>
+                        <Tab>pizza</Tab>
+                        <Tab>soups</Tab>
+                        <Tab>desserts</Tab>
+                        <Tab>drinks</Tab>
+                    </TabList>
+
+                    <TabPanel>
                         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
                             <Card />
                             <Card />
@@ -31,10 +45,8 @@ export default function ShopCategory() {
                             <input className="join-item btn btn-square" type="radio" name="options" aria-label="3" />
                             <input className="join-item btn btn-square" type="radio" name="options" aria-label="4" />
                         </div>
-                    </div>
-
-                    <input type="radio" name="my_tabs_3" className="tab" aria-label="pizza" />
-                    <div className="tab-content bg-base-100 border-base-300 p-6">
+                    </TabPanel>
+                    <TabPanel>
                         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
                             <Card />
                             <Card />
@@ -56,10 +68,8 @@ export default function ShopCategory() {
                             <input className="join-item btn btn-square" type="radio" name="options" aria-label="3" />
                             <input className="join-item btn btn-square" type="radio" name="options" aria-label="4" />
                         </div>
-                    </div>
-
-                    <input type="radio" name="my_tabs_3" className="tab" aria-label="soups" />
-                    <div className="tab-content bg-base-100 border-base-300 p-6">
+                    </TabPanel>
+                    <TabPanel>
                         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
                             <Card />
                             <Card />
@@ -81,10 +91,8 @@ export default function ShopCategory() {
                             <input className="join-item btn btn-square" type="radio" name="options" aria-label="3" />
                             <input className="join-item btn btn-square" type="radio" name="options" aria-label="4" />
                         </div>
-                    </div>
-
-                    <input type="radio" name="my_tabs_3" className="tab" aria-label="desserts" />
-                    <div className="tab-content bg-base-100 border-base-300 p-6">
+                    </TabPanel>
+                    <TabPanel>
                         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
                             <Card />
                             <Card />
@@ -106,10 +114,8 @@ export default function ShopCategory() {
                             <input className="join-item btn btn-square" type="radio" name="options" aria-label="3" />
                             <input className="join-item btn btn-square" type="radio" name="options" aria-label="4" />
                         </div>
-                    </div>
-
-                    <input type="radio" name="my_tabs_3" className="tab" aria-label="drinks" />
-                    <div className="tab-content bg-base-100 border-base-300 p-6">
+                    </TabPanel>
+                    <TabPanel>
                         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
                             <Card />
                             <Card />
@@ -131,8 +137,8 @@ export default function ShopCategory() {
                             <input className="join-item btn btn-square" type="radio" name="options" aria-label="3" />
                             <input className="join-item btn btn-square" type="radio" name="options" aria-label="4" />
                         </div>
-                    </div>
-                </div>
+                    </TabPanel>
+                </Tabs>
             </div>
         </>
     )
