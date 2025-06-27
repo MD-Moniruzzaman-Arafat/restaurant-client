@@ -2,19 +2,22 @@ import React from 'react'
 import ItemBanner from '../../reUseableComponents/ItemBanner'
 import Item from '../../reUseableComponents/Item'
 import { Link } from 'react-router-dom'
+import useMenu from '../../hooks/useMenu'
 
 export default function Soups() {
+    const [menu] = useMenu()
+    const desserts = menu.filter(item => item.category === 'pizza')
+    const showDesserts = desserts.slice(0, 6);
+    console.log(showDesserts);
+
     return (
         <>
             <ItemBanner title={'SOUPS'} description={'Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.'} />
             <div className='max-w-6xl  mx-auto my-10'>
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-5 my-10'>
-                    <Item />
-                    <Item />
-                    <Item />
-                    <Item />
-                    <Item />
-                    <Item />
+                    {
+                        showDesserts.map(item => <Item key={item._id} item={item} />)
+                    }
                 </div>
                 <div className='max-w-6xl text-center mx-auto'>
                     <Link to={`/category/${'soups'}`} >
