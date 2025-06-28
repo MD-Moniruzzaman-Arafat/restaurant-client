@@ -5,7 +5,7 @@ export default function Navbar() {
     const navMenu = (
         <>
             <li><Link to={'/'}>Home</Link></li>
-            <li><a>Contact Us</a></li>
+            <li><Link to={'contact-us'}>Contact Us</Link></li>
             <li><a>Dashboard</a></li>
             <li><Link to={'our-menu'}>Our Menu</Link></li>
             <li><Link to={'our-shop'}>Our Shop</Link></li>
